@@ -37,7 +37,8 @@ void addNode()
 			else
 		{
 				// Insert the new node in the middle or at the end
-			Node* current = START; 
+			    Node* current = START; 
+				Node *previous = NULL; 
 
 
 
