@@ -42,7 +42,10 @@ void addNode()
 
 				while (current != NULL && current->noMhs < newNode -> noMhs)
 				{
-					previous = current; current current->next; // step le move the current to the next node
+					previous = current; 
+					current = current->next; 
+
+
 
 
 
