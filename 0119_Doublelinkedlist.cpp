@@ -20,7 +20,7 @@ void addNode()
 		if (START == NULL || newNode->noMhs <= START->noMhs)
 		{ // step 2: insert the new node at the beginning
 
-			if (START != NULL && newNode->noMhs == START-> noMhs)
+			if (START != NULL && newNode->noMhs == START->noMhs)
 			{
 				cout << "\033[31mDuplicate roll numbers not allowed\033[0m" << endl;
 				return;
@@ -33,10 +33,11 @@ void addNode()
 			}
 			newNode->prev = NULL; // step 5: make the new node point to NULL
 			START = newNode;        // step 6: make the new node the first node
-
+		}
 			else
-
+		{
 				// Insert the new node in the middle or at the end
+			Node* current = START; 
 
 
 
